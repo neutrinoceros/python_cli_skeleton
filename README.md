@@ -3,14 +3,15 @@ a minimal working example of a properly packaged Python CLI program
 
 
 
-## Instalation
+## Installation
 
 **from source**
 ```shell
 $ python -m pip install git+https://github.com/python_cli_skeleton.git
 ```
 
-or a install a dev copy in editable mode
+or 
+**install a dev copy in editable mode**
 ```shell
 $ git clone ... # use https or ssh
 $ cd python_cli_skeleton
@@ -64,4 +65,3 @@ The package itself is organized as follow
 $ python -m skeleton
 Greetings Elvis !
 ```
-- 
