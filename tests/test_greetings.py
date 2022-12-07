@@ -1,4 +1,4 @@
-from skeleton import main
+from skeleton.__main__ import main
 
 def test_default(capsys):
     ret = main()

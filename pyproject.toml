@@ -19,7 +19,7 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
 ]
-requires-python = ">=3.6"
+requires-python = ">=3.8"
 dependencies = [
     "rich>=10.13.0",
     "importlib-metadata;python_version < \"3.8\"",
@@ -36,7 +36,7 @@ content-type = "text/markdown"
 [project.scripts]
 # Here we define a "greet" entry point, which will be the name
 # of our CLI
-greet = "skeleton:main"
+greet = "skeleton.__main__:main"
 
 [project.urls]
 Homepage = "https://github.com/neutrinoceros/python_cli_skeleton"
