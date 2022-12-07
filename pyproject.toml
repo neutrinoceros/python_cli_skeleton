@@ -1,0 +1,55 @@
+[build-system]
+requires = [
+    "setuptools>=61.2",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skeleton"
+version = "0.0.0"
+description = "A minimal working example of a properly packaged Python CLI program"
+authors = [
+    { name = "C.M.T. Robert" },
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+]
+requires-python = ">=3.6"
+dependencies = [
+    "rich>=10.13.0",
+    "importlib-metadata;python_version < \"3.8\"",
+    "stdlib-list>=0.8;python_version < \"3.10\"",
+]
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.scripts]
+# Here we define a "greet" entry point, which will be the name
+# of our CLI
+greet = "skeleton:main"
+
+[project.urls]
+Homepage = "https://github.com/neutrinoceros/python_cli_skeleton"
+
+[tool.setuptools]
+license-files = [
+    "LICENSE",
+]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [
+    "tests*",
+    "testing*",
+]
+namespaces = false
