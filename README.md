@@ -7,7 +7,7 @@ a minimal working example of a properly packaged Python CLI program
 
 **from source**
 ```shell
-$ python -m pip install git+https://github.com/python_cli_skeleton.git
+$ python -m pip install git+https://github.com/neutrinoceros/python_cli_skeleton.git
 ```
 
 or 
